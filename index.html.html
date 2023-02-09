@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<!-- Je suis dans un commmentaire -->
+
+<head>
+    <!--La partie head n'apparait pas dans la fenetre du navigateur, sauf le titre qui est le nom de l'onglet qui s'ouvre dans le navigateur.
+        Elle contient des infos importantes pour garantir un affichage correct, référencé et stylé -->
+    <meta charset="UTF-8">
+    <title>Titre de ma page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<!--La partie body englobe le contenu textuel structuré 
+        et les liens vers :
+        - soit des éléments multimédia (photo, audio, vidéo)
+        - soit des pages déjà présentes sur le web 
+        - soit d'autres pages que vous créez... -->
+
+<body>
+    <!--Structurer son texte-->
+    <h1>Paris</h1>
+
+    <h2>Les monuments hitoriques de paris</h2>
+
+
+    Paris et la capitale de la france. Elle contient monuments principales.<br>
+    <!-- une liste avec numérotation-->
+    <ol>
+        <li>La tour Eiffel</li>
+        <li>Notre Dame</li>
+        <li>l'arc de Triomphe</li>
+        <li>le Louvre</li>
+    </ol>
+
+    <p> Chacun de ces monuments on leur histoire </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xqNytda9BBE" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+
+    <h2>Choississez votre monument :</h2>
+
+    <label for="eiffel">Tour Eiffel</label>
+    
+    <input type="radio" id="eiffel" value="eiffel" name="monumentchoix" onchange="changemonument()">
+
+    <label for="notreDame">Notre Dame</label>
+    <input type="radio" id="notreDame" value="notreDame" name="monumentchoix" onchange="changemonument()">
+
+    <br />
+
+    <div id="toutou">
+        <h3> La tour Eiffel </h3>
+        <div class="tata">
+            <!-- pour integrer une image, enregistrée dans le même répertoire que le présent fichier HTML-->
+            <img src="toureiffel.jpeg"><br>
+            <p class="decale"> la tour Eiffel est aussi connu sous le nom "la dame de fer".elle a été construite par
+                Gustave Eiffel, elle
+                messure 330m2 de hauteur, elle est suitué dans le 7eme arrondisement de Paris juste en face du trocadero
+                Elle a été construite pour être une des attractions principales de l'Exposition universelle de Paris en
+                1889. Placée sous le signe du progrès industriel et des grandes constructions de fer et d'acier,
+                l'Exposition universelle de 1889 occupait tout le Champ-de-Mars à Paris.
+            </p>
+        </div>
+
+        <!--pour integrer un lien vers un autre site -->
+        <p><a href="https://www.toureiffel.paris/fr">cliquer pour en savoir plus</a></p>
+    </div>
+
+    <div id="madame">
+        <h3>Notre dame</h3>
+        <div class="tata">
+            <img src="Notredame.jpg"><br>
+            <p class="decale"> Notre Dame de Paris est une cathedrale.Elle est située sur l'île de la Cité et est un
+                lieu de culte
+                catholique, c'est une cathedrale gautique. La cathédrale est construite en l'honneur de la Vierge Marie,
+                mère de Jésus. Elle a été construite en 1063 et c'est étalée sur 150 ans. Il s'est articulé sur deux
+                périodes. La première s'étend de 1163, début des travaux, jusqu'à 1 250, presque un siècle plus tard.
+            </p>
+        </div>
+        <a href="https://fr.wikipedia.org/wiki/Cath%C3%A9drale_Notre-Dame_de_Paris">cliquer pour en savoir plus</a>
+    </div>
+    <br>
+
+    <!--pour integrer un lien vers un autre page HTML, enregistrée dans le même répertoire que le présent fichier HTML-->
+    <a href="page 2.html">page suivante</a><br>
+
+</body>
+
+</html>

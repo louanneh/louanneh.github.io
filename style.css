@@ -1,0 +1,48 @@
+/* Fichier CSS à personnaliser */
+
+h1 {
+  text-align: center;
+  color: black;
+  background: rgb(0, 0, 255);
+  background: linear-gradient(90deg, rgba(0, 0, 255, 1) 0%, rgba(255, 255, 255, 1) 34%, rgba(255, 255, 255, 1) 71%, rgba(255, 0, 0, 1) 100%);
+}
+
+.special {
+  color: orange;
+  background-color: navy;
+  border: solid black;
+}
+
+.souligne {
+  text-decoration: underline red;
+}
+
+#bloc1 {
+  border: 5px solid purple;
+  width: 40%;
+  background-color: darkturquoise;
+  color: white;
+  padding: 20px;
+}
+
+#monImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tata {
+  display: flex;
+}
+
+.decale {
+  margin-left: 16px;
+}
+
+img {
+  width: 400px;
+}
+
+h3 {
+  text-decoration: underline red;
+}
